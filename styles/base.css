@@ -32,6 +32,7 @@ nav{
 display: grid;
 justify-content: center;
 background-color:#1d3557;
+text-align: center;
 }
 
 nav :hover{
@@ -39,14 +40,15 @@ background-color: #dda15e;
 margin-left:-10%;
 margin-right:-10%;
 color:#1d3557;
-padding-left: 10%;
+/* padding-left: 10%; */
+text-align: center;
 }
 
 nav a{
 color:#fefae0;
 text-decoration: none;
-padding-top:5%;
-padding-bottom: 5%;
+padding-top:1%;
+padding-bottom: 1%;
 font-size: 1.5em;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -56,16 +58,17 @@ display: grid;
 box-shadow:5px 5px 10px #6f7364;
 border: 2px solid #e9edc9;
 padding: 2%;
-margin-top:2%;
-margin-bottom:2%;
+/* margin-top:2%;
+margin-bottom:2%; */
+margin: 2%
 }
 
 section h3{
 background-color:#ade8f4 ;
 margin-top: -2%;
 margin-left: -2%;
-margin-right: -2.5%;
-padding: 5%;
+margin-right: -2%;
+padding: 1%;
 text-align: center;
 }
 
@@ -86,6 +89,7 @@ line-height: 1.5;
 
 main h2{
 text-decoration: underline;
+text-align: center;
 }
 
 footer img{

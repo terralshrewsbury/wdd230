@@ -1,0 +1,15 @@
+@media screen and (min-width: 640px) {
+nav {
+display: flex;
+}
+nav a{
+    flex:1 1 100%;
+    text-align: center;
+}
+nav :hover{
+    margin: auto;
+    text-align: center;
+}
+
+}
+    
