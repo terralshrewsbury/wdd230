@@ -6,7 +6,7 @@ nav a{
     flex:1 1 100%;
     text-align: center;
 }
-nav :hover{
+nav a:hover{
     margin: auto;
     text-align: center;
 }
