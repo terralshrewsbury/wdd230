@@ -1,0 +1,11 @@
+@media screen and(max-width) {
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+}    
+
+div{
+grid-column: 1/2;
+}
+
+}
