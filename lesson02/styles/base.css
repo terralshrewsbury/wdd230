@@ -1,3 +1,4 @@
+
 *{
 box-sizing: border-box;
 }
@@ -8,6 +9,7 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 1rem;
 /* border: 5px solid black; */
 padding-bottom: 1rem;
+font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 div{
@@ -58,8 +60,9 @@ border: 2px solid #6f7364;
 .card p{
 color:black;
 padding-top:1rem;
-max-height: 100px;
-padding-bottom: 50px ;
+max-height: 150px;
+padding-bottom: 90px ;
+font-family: 'poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
