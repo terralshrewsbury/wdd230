@@ -99,3 +99,13 @@ width: 30%;
     align-self: center;
     width:95%;
 }
+
+h2::before{
+    content: "💻";
+}
+
+h2 {
+    padding-top: 1rem;
+    border-bottom: 1px solid black;
+    /* border: 2px solid black; */
+}
