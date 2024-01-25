@@ -62,13 +62,16 @@ padding: 2%;
 margin-bottom:2%; */
 margin: 2%
 }
+.card div{
+    text-align: center;
+}
 
 section h3{
 background-color:#ade8f4 ;
 margin-top: -2%;
 margin-left: -2%;
-margin-right: -2%;
-padding: 1%;
+margin-right: -2.5%;
+padding: 2%;
 text-align: center;
 }
 
@@ -87,11 +90,12 @@ text-align: center;
 line-height: 1.5;
 }
 
-main h2{
-text-decoration: underline;
-text-align: center;
-}
-
 footer img{
 width: 30%;
+}
+
+.map{
+    justify-self: center;
+    align-self: center;
+    width:95%;
 }
