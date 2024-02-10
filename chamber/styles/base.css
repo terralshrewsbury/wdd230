@@ -113,6 +113,7 @@ h1, h2{
 }
 .spotlights h2{
     border-bottom: 2px solid #1E0605;
+    text-align: center;
 }
 .spotlightbox{
     border:2px #380403 solid;
