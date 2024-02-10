@@ -1,8 +1,8 @@
 *{
     box-sizing:border-box;
-    background-color: #f6eeee;
 }
 main{
+    background-color: #f6eeee;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +13,13 @@ main{
 h1, h2{
     font-family:'Kaushan Script', 'Times New Roman', Times, serif;
 }
+.switch{
+    position: absolute;
+    top:1rem;
+    left:1rem;
+    cursor:pointer;
+    font-size: 2rem;
+}
 .hero{
     width: 100%;
 }
@@ -20,8 +27,10 @@ h1, h2{
     max-width: 100%;
 }
 .heading{
-    background-color: rgba(246, 238, 238, 0.5);
+    /* background-color: rgba(246, 238, 238, 0.5); */
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
+    color:white;
     font-size: 1.5rem;
 }
 #menu {
@@ -97,6 +106,27 @@ h1, h2{
     background-color:#DDD2C4;
     margin: 5px auto;
 }
+.spotlights{
+    margin: auto;
+    border:5px solid #1E0605;
+    padding:2%
+}
+.spotlights h2{
+    border-bottom: 2px solid #1E0605;
+}
+.spotlightbox{
+    border:2px #380403 solid;
+    margin:10px auto;
+    /* width: 80%; */
+}
+.slogan{
+    text-align:right;
+    padding-left:100px;
+}
+.contactinfo {
+    text-align: center;
+    display: block;
+}
 .board{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -129,4 +159,3 @@ footer p{
 }
 #currentYear{
     background-color: #380403;
-}
