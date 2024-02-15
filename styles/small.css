@@ -40,6 +40,8 @@
 .hero {
     margin:10px auto;
     position:relative;
+    left:0;
+    top:0;
     border:1px solid rgba(0,0,0,.1);
     height: 300px;
 }
