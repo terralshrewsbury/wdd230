@@ -64,7 +64,20 @@
         <section class="card">
             <h3>Information</h3>
                 <div id="locationforweather">Clinton, Utah</div>
-                <div id="weather">Loading weather...</div>
+                <div id="weather">Weather
+                    <div class="currentTemp">
+                        <label for="currentTemp"> Please enter the current temperature: </label>
+                        <input type="number" id="currentTemp" placeholder="45">
+                        <span>&deg;F</span>
+                    </div>
+                    <div class="windSpeed">
+                        <label for="windSpeed">Please enter the current wind speed:</label>
+                        <input type="number" id="windSpeed" placeholder="5">
+                        <span>mph</span>
+                    </div>
+                    <button id="windChillButton">Calcutale Wind Chill</button>
+                    <div id="windChill"></div>
+                </div>
                 <div id="visitcount">Loading visit count...</div>
         </section>
         <div class="map">
@@ -77,6 +90,7 @@
     </footer>  
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>  
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
 
