@@ -21,3 +21,4 @@ const addItem = () => {
 };
 
 button.addEventListener("click", addItem);
+button.addEventListener("keydown", (event) => (event.key === "Enter") && addItem());
