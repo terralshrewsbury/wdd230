@@ -1,0 +1,27 @@
+body {
+    text-align: center; /* Center inline content horizontally */
+}
+main {
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+    flex-direction: column;
+}
+.fade-in {
+    display:block;
+    background-color: black;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid black;
+    opacity: 0; /* Start with opacity 0 to create the fade effect */
+    animation:fade 15s ease-in-out forwards; /* Apply the fade-in animation */
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
