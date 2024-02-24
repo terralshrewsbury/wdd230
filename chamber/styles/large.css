@@ -102,4 +102,11 @@ main{
     grid-column: 1/4;
     font-size: 2rem;
 }
+
+/* Discover styleing */
+
+.imagesofinterest img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
 }

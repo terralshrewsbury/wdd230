@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinton City's Chamber of Commerce-Discover</title>
+    <link rel="icon" href="images/favicon.webp" sizes="any">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css"> 
+    <link rel="stylesheet" href="styles/large.css">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+
+    <!-- Essential META Tags  -->
+    <meta name="description" content="Clinton City's Chamber of Commerce-Discover">
+    <meta name="author" content="Terral Shrewsbury">
+    <meta property="og:title" content="Clinton City's Chamber of Commerce-Discover">
+    <meta property="og:image" content="https://terralshrewsbury.github.io/wdd230/chamber/images/clintoncity.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://terralshrewsbury.github.io/wdd230/chamber/index.html">
+    <meta name="twitter:card" content="clinton-city-utah">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Clinton City's Chamber of Commerce-Discover">
+    <meta property="og:site_name" content="Terral Shrewsbury">
+    <meta name="twitter:image:alt" content="Clinton,Utah"> 
+
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="hero">
+            <img class="hero" src="images/discovercover.webp" srcset="images/discovercoversmall.jpg 1x, images/discovercovermedium.jpg 2x, images/discovercoverlarge.jpg x3 " alt="hero image">
+        </div>
+        <label class="switch">
+            🕶️
+        </label>
+        <h1 class="heading">Clinton Chamber of Commerce</h1>
+        <button id="menu">Menu</button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+        <div class="discoverPage">
+            <div class="side-bar">
+                <section class="lastvisit">
+                    <p><span class=lastvisitlabel>You visited </span><span class= "howlongago"></span> ago. Welcome back!</p>
+                </section>
+                <section class="demographics">
+                    <h3>Demographics</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quas ducimus itaque odit magni quaerat fuga fugit praesentium ut incidunt minus tempora! Labore suscipit dicta eum minus reprehenderit iste rerum.</p>
+                </section>
+                <section class="nextEvent">
+                    <h3>Next Event</h3>
+                    <img src="https://picsum.photos/300/300" alt="next event flyer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nostrum eius corporis, quisquam quaerat quo! Reprehenderit dolorum sint quia voluptates?</p>
+                </section>
+                <section class="calendar">
+                    <h2>Calendar</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body">
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="imagesofinterest">
+                <img src="https://picsum.photos/400/400" alt="image of interest 1" loading="lazy" >
+                <img src="https://picsum.photos/400/500" alt="image of interest 2" loading="lazy">
+                <img src="https://picsum.photos/400/450" alt="image of interest 3" loading="lazy">
+                <img src="https://picsum.photos/400/550" alt="image of interest 4" loading="lazy">
+                <img src="https://picsum.photos/400/600" alt="image of interest 5" loading="lazy">
+                <img src="https://picsum.photos/400/650" alt="image of interest 6" loading="lazy">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Terral Shrewsbury<br>Project for WDD 230, BYU-Idaho</p>
+        <p id="lastModified"></p>
+    </footer>  
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>  
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/generateCalendar.js"></script>
+    <script src="scripts/howlongago.js"></script>
+</body>
+</html>
