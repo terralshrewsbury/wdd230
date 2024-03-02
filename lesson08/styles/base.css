@@ -1,0 +1,31 @@
+table{
+    width: 50%;
+    border-collapse: collapse;
+}
+.titleCaption {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+thead{
+    background-color: black;
+    color:white;
+    text-align: left;
+}
+.columnHead{
+    background-color: rgb(53, 52, 52);
+}
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Border color between rows */
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+}
+.data{
+    text-align: center;
+}
+tbody tr:nth-child(even) {
+    background-color: #ecf0f1; /* Zebra striping for even rows */
+}
+tbody tr:hover {
+    background-color: #d4e6f1; /* Highlight color on hover */
+}
