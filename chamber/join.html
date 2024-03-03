@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinton City's Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.webp" sizes="any">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css"> 
+    <link rel="stylesheet" href="styles/large.css">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+
+    <!-- Essential META Tags  -->
+    <meta name="description" content="Clinton City's Chamber of Commerce">
+    <meta name="author" content="Terral Shrewsbury">
+    <meta property="og:title" content="Clinton City's Chamber of Commerce">
+    <meta property="og:image" content="https://terralshrewsbury.github.io/wdd230/chamber/images/clintoncity.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://terralshrewsbury.github.io/wdd230/chamber/index.html">
+    <meta name="twitter:card" content="clinton-city-utah">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Clinton City's Chamber of Commerce">
+    <meta property="og:site_name" content="Terral Shrewsbury">
+    <meta name="twitter:image:alt" content="Clinton,Utah"> 
+
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="hero">
+            <img class="hero" src="images/clintoncitypark.webp" srcset="images/clintoncityparksmall.jpg 1x, images/clintoncityparkmedium.jpg 2x, images/clintoncityparklarge.jpg x3 " alt="hero image">
+        </div>
+        <label class="switch">
+            🕶️
+        </label>
+        <h1 class="heading">Clinton Chamber of Commerce</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+        <h1 class="formHeading">Join Form</h1>
+        <div id="formmessage"></div>
+        <form action="thankyou.html" method="get" onsubmit="setSubmissionTime()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="title">Title or Position:</label>
+            <input type="text" id="title" name="title" pattern="(?![\d_])([a-zA-Z\- ]{7,})" required>
+
+            <label for="email">Contact Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="organization">Business/Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+        
+            <label for="membershipLevel">Membership Level:</label>
+            <select id="membershipLevel" name="membershipLevel" required>
+                <option value="NP">NP Membership</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+        
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+        
+            <input type="hidden" id="submissionTime" name="submissionTime">
+
+            <button type="submit">Submit</button>
+        
+        </form>
+        
+        <div class="membership-benefits">
+            <!-- Add membership level benefits content here -->
+            <h2>Membership Level Benefits</h2>
+            <p class="mlbtitle">NP Membership:</p> <p>No fee. Enjoy the benefits of being a part of our non-profit community, including access to exclusive events and resources.</p>
+            <p class="mlbtitle">Bronze Membership:</p> 
+            <p>Unlock enhanced features with our Bronze Membership. Receive special event invitations, training sessions, and a spotlight position on our home page.</p>
+            <p class="mlbtitle">Silver Membership:</p> 
+            <p>Elevate your experience with Silver Membership. Enjoy all the benefits of Bronze, plus additional event discounts, advertising opportunities, and personalized training sessions.</p>
+            <p class="mlbtitle">Gold Membership:</p> 
+            <p>Maximize your impact with Gold Membership. Access the highest level of benefits, including priority event seating, premium advertising spots, and exclusive networking opportunities.</p>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Terral Shrewsbury<br>Project for WDD 230, BYU-Idaho</p>
+        <p id="lastModified"></p>
+    </footer>  
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>  
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

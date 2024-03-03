@@ -203,3 +203,51 @@ th {
     padding:5%;
     color:#DDD2C4;
 }
+
+/* style for join */
+form {
+    grid-column: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10%;
+}
+.formHeading{
+    grid-column: 1/3;
+    /* border: 5px solid black; */
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 2%;
+}
+label {
+    margin-bottom: 8px;
+    display: block;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+textarea {
+    height: 100px;
+}
+.membership-benefits {
+    background-color:#ddd2c4;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 80%;
+    text-align: center;
+    margin-right: 2%;
+    /* border:5px solid black; */
+}
+.mlbtitle{
+    font-weight: bold;
+}
+
+/* style for thank you html */
+.thanktitle{
+    grid-column: 1/3;
+    text-align: center;
+}
