@@ -1,0 +1,30 @@
+{ 
+  "wardInformation" : {
+        "familyname" : "Shrewsbury",
+        "dateofmovein" : "2015-07-04",
+        "numberoffamily" : "4",
+        "visitedbybishopric?" : true,
+        "familyMembers" :[
+        {
+            "givenname" : "Daniel Ray Shrewsbury",
+            "gender" : "M",
+            "birthdate" : "1984-12-24"
+        },
+        {
+            "givenname" : "Terral Brown Shrewsbury",
+            "gender" : "F",
+            "birthdate" : "1989-06-12"
+        },
+        {
+            "givenname" : "Lillie Patience Shrewsbury",
+            "gender" : "F",
+            "birthdate" : "2009-09-12"
+        },
+        {
+            "givenname" : "Ezra Potter Shrewsbury",
+            "gender" : "M",
+            "birthdate" : "2010-12-04"
+        }
+        ]
+    }
+}
