@@ -1,0 +1,60 @@
+{
+    "members":[
+        {
+            "name":"The Sweet Spot Mexican Snacks",
+            "address":"1933 N 2000 W Suite #3, Clinton, Ut 84015",
+            "phoneNumber":"(801) 347-0033",
+            "website":"https://www.doordash.com/store/the-sweet-spot-mexican-snacks-clinton-26192029/",
+            "image":"https://lh3.googleusercontent.com/gps/AA0Xun3qjTDF7XA4fRVp4kWRYgcH5lEF-8hEVeXJzILu3d3PJRSKY4X2IAdufgCe0Auq_9TOCHdlK6C6JrMeRPYdwA_6iA=s400-w400-h400-e1-k-p-no",
+            "membershipLevel":"🥈Silver"
+        },
+        {
+            "name":"Clinton Family Vision",
+            "address":"2028 W 2220 N, Clinton, Ut 84015",
+            "phoneNumber":"(801)779-0708",
+            "website":"https://clintonvision.com/",
+            "image":"https://clintonvision.com/wp-content/uploads/2019/07/clinton-family-vision.png",
+            "membershipLevel":"🥇Gold"
+        },
+        {
+            "name":"Tailored Tails Grooming",
+            "address":"2173 N 2000 W, Clinton, Ut 84015",
+            "phoneNumber":"(385)393-8509",
+            "website":"https://booking.moego.pet/ol/landing?name=TailoredtailsClinton",
+            "image":"https://da2gvzglbnzm0.cloudfront.net/w3/obcw/v1/logo.jpg",
+            "membershipLevel":"🥉Bronze"
+        },
+        {
+            "name":"Comfort Dental of Clinton",
+            "address":"2207 W 1800 N A, Clinton, UT 84015",
+            "phoneNumber":"(801)825-3993",
+            "website":"http://smileclinton.com/",
+            "image":"https://i0.wp.com/www.smileclinton.com/wp-content/uploads/2023/08/comfort-dental-logo-large-min-1.png?w=600&ssl=1",
+            "membershipLevel":"🥇Gold"
+        },
+        {
+            "name":"Fiiz Drinks",
+            "address":"2212 W 1800 N Ste B, Clinton, UT 84015",
+            "phoneNumber":"(385)383-7599",
+            "website":"https://fiizdrinks-orders.crispnow.com/tabs/locations",
+            "image":"https://fiizdrinks.com/wp-content/uploads/2023/05/fiiz-color-logo.png",
+            "membershipLevel":"🥇Gold"
+        },
+        {
+            "name":"Master Lee's World Class Tae Kwon Do",
+            "address":"1803 W 1800 N G2, Clinton, UT 84015",
+            "phoneNumber":"(385)600-2559",
+            "website":"https://masterleeut.com/",
+            "image":"https://masterleeut.com/wp-content/uploads/sites/254/2022/12/Spark-Final-9-300x300.png",
+            "membershipLevel":"🥈Silver"
+        },
+        {
+            "name":"JuJu Piano",
+            "address":"1387 N 550 W, Clinton, UT 84015",
+            "phoneNumber":"(801)857-9706",
+            "website":"http://jujupiano.com/",
+            "image":"http://jujupiano.com/wp-content/uploads/2019/06/JuJu-Piano-Logo-Black.png",
+            "membershipLevel":"🥉Bronze"
+        }
+    ]
+}
