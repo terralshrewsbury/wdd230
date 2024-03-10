@@ -2,7 +2,7 @@ const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophet
 const cards = document.querySelector('#cards');
 const displayProphets= (prophets) =>{
     prophets.forEach((prophet) =>{
-        let card = document.createElement("section")
+        let card = document.createElement("section");
         card.classList.add('prophet');
         let fullName = document.createElement("h2");
         let dob = document.createElement('p');
