@@ -1,4 +1,15 @@
 @media screen and (min-width:768px) {
+/*Directory styleing*/
+.memberboxs{
     
+}
+}
+.grid{
+    
+    box-sizing: border-box;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin:auto;
+}   
     
 }
