@@ -72,13 +72,15 @@ h1, h2{
     background-color: #DDD2C4;
     font-size: 1rem;
 }
-.cta button{
-    width:20%;
-    height:60%;
+.cta .button{
     background-color:#380403;
     color:#F6EEEE;
-    font-size:1rem;
+    font-size:1.5rem;
     box-shadow:5px 5px 10px #6f7364;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom:1%;
 }
 .event{
     max-width: 100%;

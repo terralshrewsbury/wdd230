@@ -32,19 +32,19 @@ apiFetch();
 const dateOne= document.querySelector('#dateOne');
 const dayOne = document.querySelector('#dayOne');
 const iconOne = document.querySelector('#iconOne');
-const captionDescOne = document.querySelector('figcaptionOne')
+const captionDescOne = document.querySelector('#figcaptionOne')
 const url1 = 'https://api.openweathermap.org/data/2.5/forecast?lat=41.14&lon=-112.05&appid=fba900f6dceb561f0f3c8c86d43c6b7f&units=imperial';
 
 const dateTwo= document.querySelector('#dateTwo');
 const dayTwo = document.querySelector('#dayTwo');
 const iconTwo = document.querySelector('#iconTwo');
-const captionDescTwo = document.querySelector('figcaptionTwo')
+const captionDescTwo = document.querySelector('#figcaptionTwo')
 const url2 = 'https://api.openweathermap.org/data/2.5/forecast?lat=41.14&lon=-112.05&appid=fba900f6dceb561f0f3c8c86d43c6b7f&units=imperial';
 
 const dateThree= document.querySelector('#dateThree');
 const dayThree = document.querySelector('#dayThree');
 const iconThree = document.querySelector('#iconThree');
-const captionDescThree = document.querySelector('figcaptionThree')
+const captionDescThree = document.querySelector('#figcaptionThree')
 const url3 = 'https://api.openweathermap.org/data/2.5/forecast?lat=41.14&lon=-112.05&appid=fba900f6dceb561f0f3c8c86d43c6b7f&units=imperial';
 
 
