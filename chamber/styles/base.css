@@ -105,10 +105,17 @@ h1, h2{
     margin: 0 auto;
     background-color:#DDD2C4;
     padding: 5%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+    text-align: center;
 }
 .weathercard h2, .weathercard div{
     background-color:#DDD2C4;
     margin: 5px auto;
+}
+#locationforweather{
+    grid-column: 1/5;
 }
 .spotlights{
     margin: auto;
@@ -170,15 +177,23 @@ footer p{
 .discoverPage{
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 5px;
     /* border:5px solid black; */
     max-width: 100%; 
     margin: auto;
 }
 .side-bar{
-    grid-column: 1/2;
+    grid-column: 2/3;
     text-align: center;
+    margin:0 auto;
+    /* border:5px solid black; */
+}
+.imagesofinterest{
+    grid-column: 4/5;
+    text-align: center;
+    align-items: right;
+    /* border:5px solid black; */
 }
 table {
     width: 100%;
@@ -192,10 +207,6 @@ th, td {
 }
 th {
     background-color: #f2f2f2;
-}
-.imagesofinterest{
-    grid-column: 2/3;
-    text-align: center;
 }
 .imagesofinterest img{
     max-width: 600px;
