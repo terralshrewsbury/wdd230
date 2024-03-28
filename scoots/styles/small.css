@@ -2,6 +2,10 @@
 #hero_box{
     display: block;
 }
+#menu{
+    display:inline-block;
+    background-color: antiquewhite;
+}
 #menu::before {
     content:"☰";
 }

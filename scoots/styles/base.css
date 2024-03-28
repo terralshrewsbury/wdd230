@@ -46,6 +46,9 @@ main{
     color:#AB806F;
     background-color:#40271E;
 }
+#menu{
+    display:none;
+}
 nav{
     display:flex;
     /* justify-self: right; */
