@@ -1,0 +1,42 @@
+@media screen and (min-width:768px) and (max-width:1400px) {
+    .title h1{
+        font-size: 2rem;
+    }
+    .title p{
+        font-size: 1rem;
+    }
+    nav{
+        font-size: 1rem;
+    }
+    .breifInfo p{
+        font-size:.75rem;
+        margin-top: 0;
+    }
+    .breifInfo a{
+        font-size: .75rem;
+        margin:0 auto;
+    }
+    .reservation_box{
+        font-size: .75rem;
+    }
+    #rentalTitle{
+        font-size: .75rem;
+    }
+    .scooters h4, .scooters p{
+        font-size: 1rem;
+    }
+    .atvs h4, .atvs p {
+        font-size: 1rem;
+    }
+    .jeeps h4, .jeeps p{
+        font-size: 1rem;
+    }
+    .todays_weather, .nextday{
+        padding:10px 0;
+    }
+    #hightemp_banner{
+        padding:0;
+        font-size: .75rem;
+        padding-top:10px;
+    }   
+}
