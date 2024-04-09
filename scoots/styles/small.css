@@ -1,4 +1,4 @@
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 767px) {
 #hero_box{
     display: block;
 }
@@ -12,22 +12,22 @@
 #menu.open::before{
     content: "❌";
 }
-.navigation{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
 .open a{
     display: block;
 }
-.navigation {
+#navigation {
     display: none; 
 }
-.navigation.open {
+#navigation.open {
     display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    font-family: Roboto;
 }
 #heroimg{
     top:0;
+    max-width: 100%;
 }
 .title{
     margin-top: 20%;
@@ -45,7 +45,12 @@
     font-size: .8rem;
 }
 .reservation_box{
-    margin:auto 4%;
+    margin:auto;
+    padding:3%;
+    padding-bottom:10%
+}
+.reservation_box h2{
+    font-size: 1.2rem;
 }
 #rentalTitle h2{
     font-size: 1.2rem;
@@ -64,15 +69,47 @@
     max-width:90%;
     height: auto;
     margin: auto;
+    padding:5%
 }
 .scooters h4,.scooters p,.atvs h4,.atvs p, .jeeps h4, .jeeps p{
     font-size: .8rem;
+    padding:1%;
 }
 .todays_weather, .nextday{
-    padding:0;
+    padding:1%;
+    font-size:.8rem;
 }
 #hightemp_banner{
-    padding:0;
-    font-size: .65rem;
+    width:90%;
+    padding:1%;
+    font-size: .5rem;
+    background-color: rgba(241,124,52,.4);
 }
+/* styles for pages 3,4, & 5*/
+header h1{
+    font-size: 1.5rem;
+    top:3%;
+}
+.menu_other{
+    position: absolute;
+    top: 15%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+/*style for page 2 */
+.rentalsPage{
+    display:flex;
+    flex-direction: column;
+}
+.rentalsPage h2{
+    font-size: 1rem;
+}
+#womanScooter{
+    display: none;
+}
+th, td {
+    padding: 3px;
+    font-size:1rem;
+}
+
 }

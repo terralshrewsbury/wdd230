@@ -32,7 +32,7 @@ function displaynextResults(nextdata){
         if (itemDate.getTime() === targetDate.getTime()){
             const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             nextdate.innerHTML = itemDate.toLocaleDateString(undefined, dateOptions);
-            nexttemp.innerHTML = `${item.main.temp}&deg;F`;
+            nexttemp.innerHTML = `The temperature at 3:00 p.m. will be: ${item.main.temp}&deg;F`;
             const nexticonSrc = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
             let nextdesc = item.weather[0].description;
             nextIcon.setAttribute('src', nexticonSrc);

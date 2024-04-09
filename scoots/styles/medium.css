@@ -1,4 +1,7 @@
-@media screen and (min-width:768px) and (max-width:1400px) {
+@media screen and (min-width:768px) and (max-width:1100px) {
+    #hero_box{
+        grid-template-columns: 1fr .5fr 1fr;
+    }
     .title h1{
         font-size: 2rem;
     }
@@ -16,8 +19,8 @@
         font-size: .75rem;
         margin:0 auto;
     }
-    .reservation_box{
-        font-size: .75rem;
+    #hero_box .reservation_box h2 {
+        font-size: 1rem;
     }
     #rentalTitle{
         font-size: .75rem;
@@ -31,12 +34,19 @@
     .jeeps h4, .jeeps p{
         font-size: 1rem;
     }
+    #weather{
+        padding:5px;
+        margin:auto
+    }
     .todays_weather, .nextday{
-        padding:10px 0;
+        padding:0px;
     }
     #hightemp_banner{
         padding:0;
         font-size: .75rem;
         padding-top:10px;
-    }   
+    }
+    /* styles for pages 3,4, & 5*/
+
+    
 }

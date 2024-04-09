@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Website/Rentals</title>
+    <link rel="icon" href="images/favicon_atv.webp" sizes="any">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Essential META tags -->
+    <meta name="discription" content="Scoots, scooter+ rental company, rentals page">
+    <meta name="author" content="Terral Shrewbsury">
+    <meta property="og:title" content="Scoots Website/Rentals">
+    <!-- <meta property="og:image" content=""> -->
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content=""> -->
+    <meta property="twitter:card" content="Scoots-website/Rentals">
+
+    <!-- Non-Essential, But Recommended -->
+    <meta property="og:description" content="Scoots, scooter+ rental company/Rentals">
+    <meta property="og:site_name" content="Scoots/Rentals">
+    <meta name="twitter:image:alt" content="Scoots logo">
+</head>
+<body>
+    <header>
+        <img id="header_img" src="images/sunset_on_beach.jpg" alt="sunset on a beach">
+        <h1><span id="title">Scoots</span> Rentals</h1>
+        <button id="menu" class="menu_other"></button>
+            <nav id="navigation" class="other_nav">
+                <a href="index.html">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    </header>
+    <main>
+        <div class="rentalsPage">
+            <h2>Max Rental Pricing</h2>
+            <div>
+                <img id="womanScooter" src="images/color_pallet_pic.webp" alt="woman on scooter">
+            </div>
+            <section class="priceTable">
+                <table class="table">
+                    <thread>
+                        <tr class="tableheading">
+                            <th colspan="2"></th>
+                            <th colspan="2">Reservation</th>
+                            <th colspan="2">Walk-In</th>
+                        </tr>
+                        <tr>
+                            <th>Rental Type</th>
+                            <th>Max. Persons</th>
+                            <th>Half Day<br>(3 hrs)</th>
+                            <th>Full Day</th>
+                            <th>Half Day<br>(3 hrs)</th>
+                            <th>Full Day</th>                            
+                        </tr>
+                    </thread>
+                    <tbody id="price_body">
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Terral Shrewsbury | Project for WDD 230, BYU-Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+    <!-- <script src="scripts/weather.js"></script> -->
+    <!-- <script src="scripts/close_banner.js"></script> -->
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/price_input.js"></script>
+    <!-- <script src=""></script> -->
+</body>
+</html>

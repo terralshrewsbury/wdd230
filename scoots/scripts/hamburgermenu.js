@@ -1,5 +1,5 @@
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const navigation = document.querySelector('#navigation');
 
 hamButton.addEventListener('click', () => {
 	console.log('Hamburger menu button clicked');

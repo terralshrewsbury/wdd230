@@ -1,4 +1,4 @@
-main{
+body{
     font-family: Roboto;
 }
 #hero_box{
@@ -81,15 +81,27 @@ nav a:hover{
     background-color: rgba(254, 252, 255, 0.5);
     padding:2%;
     border-radius: 10px;
-    
 }
 .breifInfo a{
     display:block;
-    margin:0 auto;
+    margin: auto;
     width: fit-content;
     background-color: rgba(254, 252, 255, 0.75);
-    padding:1%;
+    text-decoration: none;
+    color: #1c4656;
     border-radius: 10px;
+    padding:1%
+}
+.breifInfo .locations{
+    text-decoration: none;
+    color: #1c4656;
+    background-color: #f17c34;
+    padding: 3%;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow:5px 5px 10px #000000;
+    margin-bottom:3%;
+    margin-top:3%;
 }
 .reservation_box{
     grid-column:1/2;
@@ -116,7 +128,6 @@ nav a:hover{
     box-shadow:5px 5px 10px #000000;
     color:#1c4656;
     margin:10% 0;
-
 }
 #rental_types{
     display: grid;
@@ -131,7 +142,6 @@ nav a:hover{
     grid-row: 1/2;
     margin-bottom:0;
     font-size: larger;
-
 }
 .scooters{
     grid-row:2/3;
@@ -140,15 +150,12 @@ nav a:hover{
     grid-template-rows: .25fr .75fr;
     margin-left: 2%;
     margin-bottom:0;
-    /* border:2px gray solid; */
-    
 }
 .scooters img{
     max-width: 100%;
     height: auto;
     /* grid-column: 1/2; */
     grid-row:1/3;
-    
 }
 .scooters h4{
     margin: auto;
@@ -180,7 +187,6 @@ nav a:hover{
     position:relative;
     right:0;
     margin-left:auto;
-    
 }
 .atvs h4{
     margin: auto;
@@ -203,15 +209,11 @@ nav a:hover{
     margin-left: 2%;
     margin-top:0;
     margin-bottom:5px;
-    /* border:2px gray solid; */
-    
 }
 .jeeps img{
     max-width: 100%;
     height: auto;
-    /* grid-column: 1/2; */
-    grid-row:1/3;
-    
+    grid-row:1/3;  
 }
 .jeeps h4{
     margin: auto;
@@ -246,6 +248,7 @@ nav a:hover{
     position:absolute;
     background-color: rgba(241,124,52,.7);
     top:0;
+    width: 40%;
     padding:1%;
     border-radius: 10px;
 }
@@ -254,6 +257,9 @@ nav a:hover{
     padding:5px;
     position:absolute;
     top:0;
+}
+#hightemp_banner p{
+    text-align: center;
 }
 #close:hover{
     border:1px black solid;
@@ -266,4 +272,76 @@ footer{
     padding:1%;
     text-align:center;
     color:antiquewhite
+}
+/* styleing for rentals page and new header */
+#header_img{
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    z-index: -1;
+    top:0;
+}
+header h1{
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    background: linear-gradient(to right, rgba(251, 217, 222, 0), rgba(251, 217, 222, 0.5), rgba(251, 217, 222, 0)) 
+            , linear-gradient(to bottom, rgba(251, 217, 222, 0), rgba(251, 217, 222, 0.5), rgba(251, 217, 222, 0));
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 3rem;
+}
+#title{
+    font-family:'pacifico';
+}
+header .other_nav a{
+    padding:0 10%    
+    
+}
+.rentalsPage{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+    margin:auto;
+}
+.priceTable{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+.rentalsPage h2{
+    grid-column: 1/3;
+    margin:10px auto;
+    font-size: 2rem;
+}
+.table{
+    margin:0 auto;
+}
+.tableheading th{
+    background-color: #f2f2f2;
+}
+th, td {
+    padding: 8px;
+}
+.tableheading th {
+    background-color: #1c4656dc;
+    color:antiquewhite  
+}
+.priceTable tbody tr:nth-child(even) {
+    background-color: #f17c34b9;
+}
+.priceTable tbody tr:hover {
+    background-color: #b5b1b1;
+}
+tbody tr td:first-child {
+    text-align: left;
+}
+tbody tr td:nth-child(2) { 
+    text-align: left;
+}
+#womanScooter{
+    max-width: 90%;
+    padding-left:10px;
 }

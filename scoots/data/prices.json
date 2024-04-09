@@ -1,0 +1,52 @@
+{
+    "rentalType":[
+        {
+            "type":"Honda Metro Scooter",
+            "max":"1 👤",
+            "halfRes":"$20",
+            "fullRes":"$30",
+            "halfWalk":"$25",
+            "fullWalk":"$35"
+        },
+        {
+            "type":"Honda Dio Scooter",
+            "max":"2 👤👤",
+            "halfRes":"$30",
+            "fullRes":"$40",
+            "halfWalk":"$35",
+            "fullWalk":"$45"
+        },
+        {
+            "type":"Honda PCX150 Scooter",
+            "max":"2 👤👤",
+            "halfRes":"$40",
+            "fullRes":"$50",
+            "halfWalk":"$45",
+            "fullWalk":"$55"
+        },
+        {
+            "type":"Honda Pioneer ATV",
+            "max":"4👤👤👤👤",
+            "halfRes":"$50",
+            "fullRes":"$70",
+            "halfWalk":"$60",
+            "fullWalk":"$80"
+        },
+        {
+            "type":"Jeep Wrangler - 2 door",
+            "max":"4👤👤👤👤",
+            "halfRes":"$60",
+            "fullRes":"$85",
+            "halfWalk":"$70",
+            "fullWalk":"$90"
+        },
+        {
+            "type":"Jeep Wrangler - 4 door with a/c",
+            "max":"5 👤👤👤👤👤",
+            "halfRes":"$70",
+            "fullRes":"$100",
+            "halfWalk":"$85",
+            "fullWalk":"$125"
+        }
+    ]
+}
