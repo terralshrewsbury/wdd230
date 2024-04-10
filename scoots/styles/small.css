@@ -132,7 +132,7 @@ header h1{
 #womanScooter{
     display: none;
 }
-th, td {
+.priceTable th, .priceTable td {
     padding: 3px;
     font-size:1rem;
 }
@@ -144,6 +144,7 @@ th, td {
 .reservationPage{
     display:flex;
     flex-direction: column;
+    margin:5px;
 }
 .reservationTitle{
     font-size: 1.5rem;
@@ -153,20 +154,25 @@ th, td {
     font-size: .75rem;
 }
 #calendarMonth{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
+#nextMonth, #prevMonth{
+    font-size: 1rem;
+}
+
 th{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 td{
-    font-size:1.5rem;
+    font-size:1rem;
 }
 #threeatvs{
     display: none;
 }
 #rentalForm{
     border-radius: 0;
-    margin:1%
+    margin:1%;
+    font-size:1rem;
 }
 #period{
     font-size:1rem;
