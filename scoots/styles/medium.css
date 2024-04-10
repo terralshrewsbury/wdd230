@@ -47,6 +47,37 @@
         padding-top:10px;
     }
     /* styles for pages 3,4, & 5*/
-
+    header h1{
+        font-size: 2rem;
+    }
     
+
+    /* style for rentals page */
+    .rentalsPage{
+        display:flex;
+        flex-direction: column;
+    }
+    #womanScooter{
+        display: none;
+    }
+    /* style for reservation page */
+    .reservationPage #calendar {
+        border-collapse: collapse; 
+    }
+    
+    .reservationPage #calendar th, #calendar td {
+        padding: 5px; 
+        font-size: 1rem; 
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"]{
+        width: 150px;
+        font-size: 0.8em;
+    }
+    textarea{
+        width:100%
+    }
+
 }

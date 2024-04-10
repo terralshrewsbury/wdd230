@@ -12,17 +12,16 @@
     <!-- <link rel="stylesheet" href=""> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Essential META tags -->
-    <meta name="discription" content="Scoots, scooter+ rental company, Reservations page">
+    <meta name="description" content="Scoots, scooter+ rental company, Reservations page">
     <meta name="author" content="Terral Shrewbsury">
     <meta property="og:title" content="Scoots Website/Reservation">
     <!-- <meta property="og:image" content=""> -->
     <meta property="og:type" content="website">
     <!-- <meta property="og:url" content=""> -->
-    <meta property="twitter:card" content="Scoots-website/Reservation">
+    <meta property="twitter:card" content="summary_large_image">
 
     <!-- Non-Essential, But Recommended -->
     <meta property="og:description" content="Scoots, scooter+ rental company/Reservation ">
@@ -30,29 +29,125 @@
     <meta name="twitter:image:alt" content="Scoots logo">
 
 </head>
+
 <body>
     <header>
         <img id="header_img" src="images/sunset_on_beach.jpg" alt="sunset on a beach">
         <h1><span id="title">Scoots</span> Reservations</h1>
         <button id="menu" class="menu_other"></button>
-                <nav class="navigation">
-                    <a href="index.html">Home</a>
-                    <a href="rentals.html">Rentals</a>
-                    <a href="reservation.html">Reservation</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
+            <nav id="navigation" class="other_nav">
+                <a href="index.html">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="social" id="social_other">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
     </header>
     <main>
+        <div class="reservationPage">
+            <h1 class="reservationTitle">Select a Date for Reservation</h1>
+            <div class="calendar">
+                <h2 id="calendarMonth"></h2>
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <form id="rentalForm" action="thankyou.html" method="get">
+                <div>
+                    <label for="rentalDates">Rental Dates:</label>
+                    <input type="startdate" id="startdates" name="startdates" required readonly placeholder="Please select on calendar"> - <input type="enddate" id="enddates" name="enddates" readonly placeholder="Please select on calendar"><button id="clearDates">Clear</button>
+                </div>
 
+                <div>
+                    <label for="period">Period of Time:</label>
+                    <select id="period" name="period" required>
+                        <option value="blank" disabled selected>Choose Duration</option>
+                        <option value="half">Half Day</option>
+                        <option value="full">Full Day</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <lable for="rentalNumb">Here is Your Rental Number: </lable>
+                    <input type="text" id="rentalNumber" name="rentalNumber" readonly>
+                </div>
+                
+                <div>
+                    <label for="phone">Mobile Phone Number:</label>
+                    <input type="number" id="phone" name="phone" required placeholder="(000)000-0000">
+                </div>
+                
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div>
+                    <label for="email">Contact Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </div>
+                
+                <div>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required placeholder="Mexico">
+                </div>
+                
+                <div>
+                    <label for="cruise">Are You With A Cruise Line?</label>
+                    <input type="radio" id="yes" name="cruise" required><label for="yes">Yes</label>
+                    <input type="radio" id="no" name="cruise"><label for="no">No</label>
+                </div>
+                
+                <div>
+                    <lable for="comments">Special Accommodations/Comments</lable>
+                </div>
+                
+                <div>
+                    <textarea id="message" name="message" rows="5" cols="50" placeholder="Please provide any special accommodations or additional comments here. For example, you can mention the need and location of a drop-off request, or requests for additional services."></textarea>
+                </div>
+                
+                <div id="submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+
+        </div>
     </main>
     <footer>
         <p>© <span id="currentYear"></span> Terral Shrewsbury | Project for WDD 230, BYU-Idaho</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/close_banner.js"></script>
+    <!-- <script src="scripts/weather.js"></script> -->
+    <!-- <script src="scripts/close_banner.js"></script> -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
-    <!-- <script src=""></script> -->
+    <script src="scripts/calender.js"></script>
+    <script src="scripts/formscript.js"></script>
 </body>
 </html>

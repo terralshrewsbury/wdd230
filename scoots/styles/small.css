@@ -112,4 +112,37 @@ th, td {
     font-size:1rem;
 }
 
+/* style for reservation page */
+.reservationPage{
+    display:flex;
+    flex-direction: column;
+}
+.reservationTitle{
+    font-size: 1rem;
+    padding-top:10%;
+}
+.calendar{
+    font-size: .75rem;
+}
+input[type="startdate"],
+input[type="enddate"],
+input[type="text"],
+input[type="number"],
+input[type="email"]{
+    width: 150px;
+    font-size: 0.75em;
+    padding:5px auto;
+}
+textarea{
+    width:100%;
+    margin:5px auto;
+}
+#clearDates{
+    margin:5px;
+}
+#submit-button-container {
+    display: flex;
+    justify-content: center;
+}
+
 }
