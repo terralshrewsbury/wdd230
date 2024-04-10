@@ -11,6 +11,10 @@
     nav{
         font-size: 1rem;
     }
+    nav a:hover{
+        padding-right:2%;
+        padding-left:2%;
+    }
     .breifInfo p{
         font-size:.75rem;
         margin-top: 0;
@@ -18,6 +22,9 @@
     .breifInfo a{
         font-size: .75rem;
         margin:0 auto;
+    }
+    .breifInfo .locations{
+        font-size: 1rem;
     }
     #hero_box .reservation_box h2 {
         font-size: 1rem;
@@ -43,12 +50,21 @@
     }
     #hightemp_banner{
         padding:0;
-        font-size: .75rem;
+        font-size: 1rem;
         padding-top:10px;
+    }
+    #close{
+        
+    }
+    footer{
+        font-size: 1rem;
     }
     /* styles for pages 3,4, & 5*/
     header h1{
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    header .other_nav a{
+        font-size: 1.25rem;
     }
     
 
@@ -61,13 +77,25 @@
         display: none;
     }
     /* style for reservation page */
+    .reservationTitle{
+        font-size: 1.5rem;
+    }
+    #prevMonth, #nextMonth{
+        font-size: 1rem;
+    }
     .reservationPage #calendar {
         border-collapse: collapse; 
     }
-    
+    #calendarMonth{
+        font-size: 1.5rem;
+    }
     .reservationPage #calendar th, #calendar td {
         padding: 5px; 
         font-size: 1rem; 
+    }
+    form{
+        font-size: 1rem;
+        
     }
     input[type="text"],
     input[type="number"],
@@ -78,6 +106,53 @@
     }
     textarea{
         width:100%
+    }
+    #threeatvs{
+        max-width:80%;
+        margin-top:0;
+    }
+    /* Style for contact page */
+    .essentialContactinfo p{
+        font-size: 1rem;
+    }
+    .operatinghours ul{
+        font-size: 1rem;
+        list-style-type: none;
+    }
+    .locationboxs{
+        display:flex;
+        flex-direction: column;
+    }
+    .locations{
+        margin:1% 10%
+    }
+    .locations p{
+        font-size: 1.5rem;
+    }
+    iframe{
+        padding-top:2%;
+        max-width: 80%;
+        height: auto;
+    }
+    .bottomcontact{
+        display:flex;
+        flex-direction: column;
+        margin:auto;
+    }
+    .contactForm form{
+        border-radius: 0;
+    }
+    .contactForm input[type="text"],
+    .contactForm input[type="number"],
+    .contactForm input[type="email"],
+    .contactForm input[type="password"]{
+        font-size: 1rem;
+        padding:5px;
+        width: 100%;
+    }
+    #submit {
+        display: flex;
+        justify-content: center;
     }
 
 }

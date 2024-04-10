@@ -49,11 +49,11 @@ document.getElementById('country').addEventListener('input', () => {
             additionalInput.type = 'text';
             additionalInput.placeholder = 'State';
             additionalInput.name = 'state';
-            additionalInput.id = 'stateInput'; // Add an id to identify the input field
+            additionalInput.id = 'stateInput'; 
             country.insertAdjacentElement('afterend', additionalInput);
         }
     } else {
-        // If the input value doesn't match, remove the additional input field if it exists
+        
         const additionalInput = document.getElementById('stateInput');
         if (additionalInput) {
             additionalInput.remove();
@@ -104,4 +104,3 @@ document.getElementById('rentalForm').addEventListener('submit', function(event)
 
     window.location.href = redirectURL;
 });
-

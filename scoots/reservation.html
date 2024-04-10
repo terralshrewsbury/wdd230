@@ -76,12 +76,12 @@
                     <tbody></tbody>
                 </table>
             </div>
+            <img id='threeatvs'src="images/arial_view_three_atvs.webp" alt="arial view of three atvs." loading="lazy">
             <form id="rentalForm" action="thankyou.html" method="get">
                 <div>
                     <label for="rentalDates">Rental Dates:</label>
                     <input type="startdate" id="startdates" name="startdates" required readonly placeholder="Please select on calendar"> - <input type="enddate" id="enddates" name="enddates" readonly placeholder="Please select on calendar"><button id="clearDates">Clear</button>
                 </div>
-
                 <div>
                     <label for="period">Period of Time:</label>
                     <select id="period" name="period" required>
@@ -90,64 +90,77 @@
                         <option value="full">Full Day</option>
                     </select>
                 </div>
-                
+                <div>
+                    <label for="vehicleType">What vehicle would you like to rent?</label>
+                    <select id="vehicleOptions" name="vehicle" required>
+                        <option value="blank"disabled selected>Select a vehicle</option>
+                        <option value="HondaMetroScooter">Honda Metro Scooter 1-person</option>
+                        <option value="HondaDioScooter">Honda Dio Scooter 2-person</option>
+                        <option value="HondaPCX150Scooter">Honda PCX150 Scooter 2-person</option>
+                        <option value="HondaPioneerATV">Honda Pioneer ATV 4-person</option>
+                        <option value="JeepWrangler-2door">Jeep Wrangler - 2 door 4-person</option>
+                        <option value="JeepWrangler-4doorwitha/c">Jeep Wrangler - 4 door 5-person</option>
+                    </select>
+                </div>
                 <div>
                     <lable for="rentalNumb">Here is Your Rental Number: </lable>
                     <input type="text" id="rentalNumber" name="rentalNumber" readonly>
                 </div>
-                
                 <div>
                     <label for="phone">Mobile Phone Number:</label>
                     <input type="number" id="phone" name="phone" required placeholder="(000)000-0000">
                 </div>
-                
                 <div>
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" required>
                 </div>
-                
                 <div>
                     <label for="lastName">Last Name:</label>
                     <input type="text" id="lastName" name="lastName" required>
                 </div>
-                
+                <div>
+                    <label for="licenceNumb">Licence Number: </label>
+                    <input type="text" id="licenceNumb" name="licence" required>
+                </div>
                 <div>
                     <label for="email">Contact Email:</label>
                     <input type="email" id="email" name="email" required placeholder="example@example.com">
                 </div>
-                
                 <div>
                     <label for="country">Country:</label>
                     <input type="text" id="country" name="country" required placeholder="Mexico">
                 </div>
-                
                 <div>
-                    <label for="cruise">Are You With A Cruise Line?</label>
+                    <label for="cruise">Are You With A Cruise Line?</label><br>
                     <input type="radio" id="yes" name="cruise" required><label for="yes">Yes</label>
                     <input type="radio" id="no" name="cruise"><label for="no">No</label>
                 </div>
-                
+                <div id="rentalTermspdf">
+                    <h2>Rental Terms and Conditions</h2>
+                    <p>Click the link below to view the rental terms and conditions:</p>
+                    <a href="data/Rental Terms and Conditions.pdf" target="_blank">View Rental Terms and Conditions</a>
+                </div>
+                <div>
+                    <label for="rentalAgreement">Do you agree to the terms listed in the rental agreement?</label><br>
+                    <input type="radio" id="yes" name="agreement"required><label for="yes"> Yes </label>
+                    <input type="radio" id="no" name="agreement"><label for="no">No</label>
+                </div>               
                 <div>
                     <lable for="comments">Special Accommodations/Comments</lable>
                 </div>
-                
                 <div>
                     <textarea id="message" name="message" rows="5" cols="50" placeholder="Please provide any special accommodations or additional comments here. For example, you can mention the need and location of a drop-off request, or requests for additional services."></textarea>
                 </div>
-                
                 <div id="submit">
                     <button>Submit</button>
                 </div>
             </form>
-
         </div>
     </main>
     <footer>
         <p>© <span id="currentYear"></span> Terral Shrewsbury | Project for WDD 230, BYU-Idaho</p>
         <p id="lastModified"></p>
     </footer>
-    <!-- <script src="scripts/weather.js"></script> -->
-    <!-- <script src="scripts/close_banner.js"></script> -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/calender.js"></script>

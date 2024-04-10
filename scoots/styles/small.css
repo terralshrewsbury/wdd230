@@ -5,9 +5,11 @@
 #menu{
     display:inline-block;
     background-color: antiquewhite;
+    box-shadow:5px 5px 10px #000000;
 }
 #menu::before {
     content:"☰";
+    
 }
 #menu.open::before{
     content: "❌";
@@ -26,7 +28,7 @@
     font-family: Roboto;
 }
 #navigation.open a{
-    background-color:  rgba(28, 70, 86, 0.75);;
+    background-color:  rgba(28, 70, 86, 0.5);;
     border:2px solid rgb(28, 70, 86);
     border-radius: 5%;
     margin:5px;
@@ -44,10 +46,10 @@
     margin-top: 20%;
 }
 .title h1{
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 .title p{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .social img {
     max-width: 15px;
@@ -55,13 +57,19 @@
 .breifInfo p, .breifInfo a{
     font-size: .8rem;
 }
+.breifInfo .locations{
+    font-size: 1rem;
+}
 .reservation_box{
-    margin:auto;
+    margin:auto 10px;
     padding:3%;
     padding-bottom:10%
 }
 .reservation_box h2{
     font-size: 1.2rem;
+}
+.reservation_box a{
+    font-size: 1rem;
 }
 #rentalTitle h2{
     font-size: 1.2rem;
@@ -77,28 +85,31 @@
     flex-direction: column;
 }
 .scooters img, .atvs img, .jeeps img{
-    max-width:90%;
+    max-width:80%;
     height: auto;
     margin: auto;
     padding:5%
 }
 .scooters h4,.scooters p,.atvs h4,.atvs p, .jeeps h4, .jeeps p{
-    font-size: .8rem;
+    font-size: 1rem;
     padding:1%;
 }
 .todays_weather, .nextday{
     padding:1%;
-    font-size:.8rem;
+    font-size:1rem;
 }
 #hightemp_banner{
     width:90%;
     padding:1%;
-    font-size: .5rem;
+    font-size: 1rem;
     background-color: rgba(241,124,52,.4);
+}
+footer{
+    font-size: 1rem;
 }
 /* styles for pages 3,4, & 5*/
 header h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     top:3%;
 }
 .menu_other{
@@ -113,7 +124,10 @@ header h1{
     flex-direction: column;
 }
 .rentalsPage h2{
-    font-size: 1rem;
+    font-size: 1.75rem;
+}
+.table{
+    margin:10px;
 }
 #womanScooter{
     display: none;
@@ -122,6 +136,9 @@ th, td {
     padding: 3px;
     font-size:1rem;
 }
+.rentalTerms h4{
+    font-size:1.5rem;
+}
 
 /* style for reservation page */
 .reservationPage{
@@ -129,24 +146,61 @@ th, td {
     flex-direction: column;
 }
 .reservationTitle{
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top:10%;
 }
 .calendar{
     font-size: .75rem;
 }
+#calendarMonth{
+    font-size: 1.5rem;
+}
+th{
+    font-size: 1.5rem;
+}
+td{
+    font-size:1.5rem;
+}
+#threeatvs{
+    display: none;
+}
+#rentalForm{
+    border-radius: 0;
+    margin:1%
+}
+#period{
+    font-size:1rem;
+    padding:5px;
+}
+#clearDates{
+    font-size: 1rem;
+}
 input[type="startdate"],
-input[type="enddate"],
+input[type="enddate"]{
+    font-size: 0.75em;
+    padding:5px;
+}
 input[type="text"],
 input[type="number"],
 input[type="email"]{
     width: 150px;
     font-size: 0.75em;
-    padding:5px auto;
+    padding:5px;
+}
+#vehicleOptions{
+    font-size: 1rem;
+    padding:5px;
+}
+option{
+    font-size: 1rem;
+}
+#rentalTermspdf h2{
+    font-size: 1.5rem;
 }
 textarea{
     width:100%;
     margin:5px auto;
+    font-size: 0.75em;
 }
 #clearDates{
     margin:5px;
@@ -155,5 +209,54 @@ textarea{
     display: flex;
     justify-content: center;
 }
-
+/* Style for Contact Page */
+.contactPage h1{
+    font-size: 1.5rem;
+}
+.essentialContactinfo p{
+    font-size: 1rem;
+}
+.operatinghours ul{
+    font-size: 1rem;
+}
+.locationboxs{
+    display:flex;
+    flex-direction: column;
+}
+.locations{
+    margin:1% 10%
+}
+.locations p{
+    font-size: 1.5rem;
+}
+iframe{
+    padding-top:2%;
+    max-width: 80%;
+    height: auto;
+}
+#emergencynumb{
+    font-size: 1.5rem;
+}
+.bottomcontact{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+#faq p{
+    font-size: 1rem;
+}
+.contactForm p{
+    font-size: 1rem;
+}.contactForm input[type="text"],
+.contactForm input[type="number"],
+.contactForm input[type="email"],
+.contactForm input[type="password"]{
+    font-size: 1rem;
+    padding:5px;
+    width: 100%;
+}
+#submit {
+    display: flex;
+    justify-content: center;
+}
 }
