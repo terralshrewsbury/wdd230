@@ -3,20 +3,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const calendarBody = document.querySelector('#calendar tbody');
     const startInput = document.getElementById('startdates');
     const endInput = document.getElementById('enddates');
+    const prevMonthBtn = document.getElementById('prevMonth');
+    const nextMonthBtn = document.getElementById('nextMonth');
     let startDate = null;
     let endDate = null;
+    let currentDisplayedMonth = new Date().getMonth();
 
-    function createCalendar() {
-        const today = new Date();
-        const currentMonth = today.getMonth();
-        const currentMonthlong = today.toLocaleString('default', { month: 'long' });
-        const currentYear = today.getFullYear();
-        const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
-        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-
+    function createCalendar(month, year) {
+        const firstDayOfMonth = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
         let dayCount = 1;
         let html = '';
-        calendarMonth.textContent = `${currentMonthlong}`
+        const monthName = new Date(year, month).toLocaleString('default', { month: 'long' });
+        calendarMonth.textContent = `${monthName}`;
 
         for (let i = 0; i < 6; i++) {
             html += '<tr>';
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (i === 0 && j < firstDayOfMonth) {
                     html += '<td></td>';
                 } else if (dayCount <= daysInMonth) {
-                    const date = new Date(currentYear, currentMonth, dayCount);
+                    const date = new Date(year, month, dayCount);
                     const formattedDate = formatDate(date);
                     html += `<td id="${formattedDate}">${dayCount}</td>`;
                     dayCount++;
@@ -37,9 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             }
         }
-
         calendarBody.innerHTML = html;
+        addCellEventListeners();
+    }
 
+    function formatDate(date) {
+        const year = date.getFullYear();
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const day = date.getDate().toString().padStart(2, '0');
+        return `${month}-${day}`;
+    }
+
+    function addCellEventListeners() {
         const calendarCells = calendarBody.querySelectorAll('td');
         calendarCells.forEach(cell => {
             cell.addEventListener('click', () => {
@@ -60,13 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-    }
-
-    function formatDate(date) {
-        const year = date.getFullYear();
-        const month = (date.getMonth() + 1).toString().padStart(2, '0');
-        const day = date.getDate().toString().padStart(2, '0');
-        return `${month}-${day}`;
     }
 
     function highlightDates(startDate, endDate) {
@@ -90,10 +91,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    function updateCalendar() {
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        createCalendar(currentDisplayedMonth, currentYear);
+    }
+
+    prevMonthBtn.addEventListener('click', function() {
+        currentDisplayedMonth--;
+        if (currentDisplayedMonth < 0) {
+            currentDisplayedMonth = 11;
+        }
+        updateCalendar();
+    });
+
+    nextMonthBtn.addEventListener('click', function() {
+        currentDisplayedMonth++;
+        if (currentDisplayedMonth > 11) {
+            currentDisplayedMonth = 0;
+        }
+        updateCalendar();
+    });
+
     document.getElementById('clearDates').addEventListener('click', function(event) {
         event.preventDefault();
         resetSelection();
     });
-    
-createCalendar();
+
+    updateCalendar();
 });

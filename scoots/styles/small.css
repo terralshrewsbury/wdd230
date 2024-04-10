@@ -25,6 +25,17 @@
     text-align: center;
     font-family: Roboto;
 }
+#navigation.open a{
+    background-color:  rgba(28, 70, 86, 0.75);;
+    border:2px solid rgb(28, 70, 86);
+    border-radius: 5%;
+    margin:5px;
+    font-size: 1.5rem;
+}
+#navigation.open a:hover{
+    color:#AB806F;
+    background-color:#2b1912;
+}
 #heroimg{
     top:0;
     max-width: 100%;
