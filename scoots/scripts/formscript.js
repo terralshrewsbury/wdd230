@@ -61,9 +61,9 @@ document.getElementById('country').addEventListener('input', () => {
     }
 });
 
-document.getElementById('yes').addEventListener('change', () => {
-    const cruiseYes = document.getElementById('yes');
-    const cruiseLabel = document.querySelector('label[for="yes"]');
+document.getElementById('yesCruise').addEventListener('change', () => {
+    const cruiseYes = document.getElementById('yesCruise');
+    const cruiseLabel = document.querySelector('label[for="yesCruise"]');
     
     if (cruiseYes.checked) {
         const additionalInput = document.createElement('input');
@@ -84,7 +84,7 @@ document.getElementById('yes').addEventListener('change', () => {
     } 
 });
 
-document.getElementById('no').addEventListener('change', () => {
+document.getElementById('noCruise').addEventListener('change', () => {
     const additionalInput = document.getElementById('cruiselineInput');
         const additionalInputship = document.getElementById('ShipsName');
         if (additionalInput) {

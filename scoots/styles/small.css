@@ -55,7 +55,7 @@
     max-width: 15px;
 }
 .breifInfo p, .breifInfo a{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .breifInfo .locations{
     font-size: 1rem;
@@ -125,6 +125,7 @@ header h1{
 }
 .rentalsPage h2{
     font-size: 1.75rem;
+    margin-top:10%;
 }
 .table{
     margin:10px;
@@ -139,6 +140,10 @@ header h1{
 .rentalTerms h4{
     font-size:1.5rem;
 }
+.rentalTerms ul{
+    font-size: 1rem;
+    list-style-type: disc;
+}
 
 /* style for reservation page */
 .reservationPage{
@@ -149,6 +154,7 @@ header h1{
 .reservationTitle{
     font-size: 1.5rem;
     padding-top:10%;
+    margin-top:10%;
 }
 .calendar{
     font-size: .75rem;
@@ -160,11 +166,12 @@ header h1{
     font-size: 1rem;
 }
 
-th{
+#calendar th{
     font-size: 1rem;
 }
-td{
+#calendar td{
     font-size:1rem;
+    padding:1%;
 }
 #threeatvs{
     display: none;
@@ -215,9 +222,20 @@ textarea{
     display: flex;
     justify-content: center;
 }
+/* Style for Thankyou page */
+.thankyouPage h1{
+    font-size: 2rem;
+}
+.thankyouPage h4{
+    font-size: 1.5rem;
+}
+.thankyouPage p{
+    font-size: 1rem;
+}
 /* Style for Contact Page */
 .contactPage h1{
     font-size: 1.5rem;
+    margin-top:10%;
 }
 .essentialContactinfo p{
     font-size: 1rem;
@@ -233,7 +251,7 @@ textarea{
     margin:1% 10%
 }
 .locations p{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 iframe{
     padding-top:2%;
@@ -253,7 +271,8 @@ iframe{
 }
 .contactForm p{
     font-size: 1rem;
-}.contactForm input[type="text"],
+}
+.contactForm input[type="text"],
 .contactForm input[type="number"],
 .contactForm input[type="email"],
 .contactForm input[type="password"]{

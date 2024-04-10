@@ -59,7 +59,7 @@
             <h1 class="reservationTitle">Select a Date for Reservation</h1>
             <div class="calendar">
                 <button id="prevMonth">Previous Month 👈</button>
-                <h2 id="calendarMonth"></h2>
+                <h2 id="calendarMonth">placeholder</h2>
                 <button id="nextMonth">👉 Next Month</button>
                 <table id="calendar">
                     <thead>
@@ -76,24 +76,26 @@
                     <tbody></tbody>
                 </table>
             </div>
-            <img id='threeatvs'src="images/arial_view_three_atvs.webp" alt="arial view of three atvs." loading="lazy">
+            <img id='threeatvs' src="images/arial_view_three_atvs.webp" alt="arial view of three atvs." loading="lazy">
             <form id="rentalForm" action="thankyou.html" method="get">
                 <div>
-                    <label for="rentalDates">Rental Dates:</label><br>
-                    <input type="startdate" id="startdates" name="startdates" required readonly placeholder="Please select on calendar"> - <input type="enddate" id="enddates" name="enddates" readonly placeholder="Please select on calendar"><button id="clearDates">Clear</button>
+                    <label for="startdates">Rental Dates:</label><br>
+                    <input type="date" id="startdates" name="startdates" required readonly> - 
+                    <input type="date" id="enddates" name="enddates" readonly><button id="clearDates">Clear</button>
+                    <p>Please select dates on the calendar.</p>
                 </div>
                 <div>
                     <label for="period">Period of Time:</label>
                     <select id="period" name="period" required>
-                        <option value="blank" disabled selected>Choose Duration</option>
+                        <option value="" disabled selected>Choose Duration</option>
                         <option value="half">Half Day</option>
                         <option value="full">Full Day</option>
                     </select>
                 </div>
                 <div>
-                    <label for="vehicleType">What vehicle would you like to rent?</label>
+                    <label for="vehicleOptions">What vehicle would you like to rent?</label>
                     <select id="vehicleOptions" name="vehicle" required>
-                        <option value="blank"disabled selected>Select a vehicle</option>
+                        <option value="" disabled selected>Select a vehicle</option>
                         <option value="HondaMetroScooter">Honda Metro Scooter 1-person</option>
                         <option value="HondaDioScooter">Honda Dio Scooter 2-person</option>
                         <option value="HondaPCX150Scooter">Honda PCX150 Scooter 2-person</option>
@@ -103,12 +105,12 @@
                     </select>
                 </div>
                 <div>
-                    <lable for="rentalNumb">Here is Your Rental Number: </lable>
+                    <label for="rentalNumber">Here is Your Rental Number: </label>
                     <input type="text" id="rentalNumber" name="rentalNumber" readonly>
                 </div>
                 <div>
                     <label for="phone">Mobile Phone Number:</label>
-                    <input type="number" id="phone" name="phone" required placeholder="(000)000-0000">
+                    <input type="tel" id="phone" name="phone" required placeholder="(000)000-0000">
                 </div>
                 <div>
                     <label for="firstName">First Name:</label>
@@ -119,7 +121,7 @@
                     <input type="text" id="lastName" name="lastName" required>
                 </div>
                 <div>
-                    <label for="licenceNumb">Licence Number: </label>
+                    <label for="licenceNumb">License Number: </label>
                     <input type="text" id="licenceNumb" name="licence" required>
                 </div>
                 <div>
@@ -131,22 +133,22 @@
                     <input type="text" id="country" name="country" required placeholder="Mexico">
                 </div>
                 <div>
-                    <label for="cruise">Are You With A Cruise Line?</label><br>
-                    <input type="radio" id="yes" name="cruise" required><label for="yes">Yes</label>
-                    <input type="radio" id="no" name="cruise"><label for="no">No</label>
+                    <label>Are You With A Cruise Line?</label><br>
+                    <input type="radio" id="yesCruise" name="cruise" required><label for="yesCruise">Yes</label>
+                    <input type="radio" id="noCruise" name="cruise"><label for="noCruise">No</label>
                 </div>
                 <div id="rentalTermspdf">
                     <h2>Rental Terms and Conditions</h2>
                     <p>Click the link below to view the rental terms and conditions:</p>
-                    <a href="data/Rental Terms and Conditions.pdf" target="_blank">View Rental Terms and Conditions</a>
+                    <a href="data/Rental%20Terms%20and%20Conditions.pdf" target="_blank">View Rental Terms and Conditions</a>
                 </div>
+                <div>                
+                    <label for="agreement">Do you agree to the terms listed in the rental agreement?</label><br>
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">Yes</label>
+                </div>             
                 <div>
-                    <label for="rentalAgreement">Do you agree to the terms listed in the rental agreement?</label><br>
-                    <input type="radio" id="yes" name="agreement"required><label for="yes"> Yes </label>
-                    <input type="radio" id="no" name="agreement"><label for="no">No</label>
-                </div>               
-                <div>
-                    <lable for="comments">Special Accommodations/Comments</lable>
+                    <p>Special Acommodations / Comments:</p>
                 </div>
                 <div>
                     <textarea id="message" name="message" rows="5" cols="50" placeholder="Please provide any special accommodations or additional comments here. For example, you can mention the need and location of a drop-off request, or requests for additional services."></textarea>

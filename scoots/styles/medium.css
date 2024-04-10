@@ -3,24 +3,24 @@
         grid-template-columns: 1fr .5fr 1fr;
     }
     .title h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .title p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     nav{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     nav a:hover{
         padding-right:2%;
         padding-left:2%;
     }
     .breifInfo p{
-        font-size:.75rem;
+        font-size:1rem;
         margin-top: 0;
     }
     .breifInfo a{
-        font-size: .75rem;
+        font-size: 1rem;
         margin:0 auto;
     }
     .breifInfo .locations{
@@ -30,15 +30,12 @@
         font-size: 1rem;
     }
     #rentalTitle{
-        font-size: .75rem;
+        font-size: 1.5rem;
     }
-    .scooters h4, .scooters p{
-        font-size: 1rem;
+    .jeeps h4, .scooters h4,.atvs h4 {
+        font-size: 1.25rem;
     }
-    .atvs h4, .atvs p {
-        font-size: 1rem;
-    }
-    .jeeps h4, .jeeps p{
+    .scooters p, .atvs p, .jeeps p {
         font-size: 1rem;
     }
     #weather{
@@ -47,14 +44,12 @@
     }
     .todays_weather, .nextday{
         padding:0px;
+        font-size: 1rem;
     }
     #hightemp_banner{
         padding:0;
         font-size: 1rem;
         padding-top:10px;
-    }
-    #close{
-        
     }
     footer{
         font-size: 1rem;
@@ -73,12 +68,18 @@
         display:flex;
         flex-direction: column;
     }
+    .rentalsPage h2{
+        font-size: 2rem;
+    }
+    .rentalTerms{
+        font-size: 1.5rem;
+    }
     #womanScooter{
         display: none;
     }
     /* style for reservation page */
     .reservationTitle{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     #prevMonth, #nextMonth{
         font-size: 1rem;
@@ -95,7 +96,6 @@
     }
     form{
         font-size: 1rem;
-        
     }
     input[type="text"],
     input[type="number"],
@@ -110,6 +110,16 @@
     #threeatvs{
         max-width:80%;
         margin-top:0;
+    }
+    /* style for thankyou page */
+    .thankyouPage h1{
+        font-size: 2rem;
+    }
+    .thankyouPage h4{
+        font-size: 1.5rem;
+    }
+    .thankyouPage p{
+        font-size: 1rem;
     }
     /* Style for contact page */
     .essentialContactinfo p{
