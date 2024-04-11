@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
-    <!-- <link rel="stylesheet" href=""> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -70,11 +69,11 @@
                 <div class="locationboxs">
                     <div class="locations" id="locationdock">
                         <p>Rental Location by the Dock<br>Phone Number: +52 (987) 123-4567</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119465.88266455862!2d-87.16247464759819!3d20.65701082821057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e430a3b3c73db%3A0xf1147cfcfa9097b6!2sCozumel%20Ferry!5e0!3m2!1sen!2sus!4v1711493910823!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d477976.51120010467!2d-87.075359!3d20.62105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e430a3b3c73db%3A0xf1147cfcfa9097b6!2sCozumel%20Ferry!5e0!3m2!1sen!2sus!4v1712798778716!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="locations" id="locationterminal">
                         <p>Rental Location by the Terminal<br>Phone Number: +52 (987) 765-4321</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7232853914174!2d-86.97600862608333!3d20.476555506518295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1711493591350!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14950.893678124334!2d-86.973434!3d20.47655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1712798864964!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <p class="chat"><a href="https://your-live-chat-url.com">🗨️ Chat with Us</a></p>
@@ -112,13 +111,13 @@
                     <h2>Contact Form</h2>
                     <p>If you would rather leave your information and we will contact you during business hours.</p>
                     <form class="contactYou">
-                        <label>Name: </label>
-                        <input type="text" id="name" required>
+                        <label for=" name">Name: </label>
+                        <input type="text" id="name" required autocomplete="name">
 
-                        <label>Email: </label>
-                        <input type="email" id="email" name="email" required placeholder="example@example.com">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required placeholder="example@example.com" autocomplete="email">
 
-                        <label>Comment: </label>
+                        <p>Comment: </p>
                         <textarea id="comment" name="comment" rows="5" cols="50" placeholder="type comment here"></textarea>
                         <div id="submit">
                             <button>Submit</button>
@@ -132,10 +131,7 @@
         <p>© <span id="currentYear"></span> Terral Shrewsbury | Project for WDD 230, BYU-Idaho</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/close_banner.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
-    <!-- <script src=""></script> -->
 </body>
 </html>

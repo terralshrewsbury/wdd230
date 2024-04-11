@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
-    <!-- <link rel="stylesheet" href=""> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -110,7 +109,7 @@
                 </div>
                 <div>
                     <label for="phone">Mobile Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="(000)000-0000">
+                    <input type="tel" id="phone" name="phone" required placeholder="(000)000-0000" autocomplete="tel">
                 </div>
                 <div>
                     <label for="firstName">First Name:</label>
@@ -126,14 +125,14 @@
                 </div>
                 <div>
                     <label for="email">Contact Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                    <input type="email" id="email" name="email" required placeholder="example@example.com" autocomplete="email">
                 </div>
                 <div>
                     <label for="country">Country:</label>
-                    <input type="text" id="country" name="country" required placeholder="Mexico">
+                    <input type="text" id="country" name="country" required placeholder="Mexico" autocomplete="country">
                 </div>
                 <div>
-                    <label>Are You With A Cruise Line?</label><br>
+                    <p>Are You With A Cruise Line?</p>
                     <input type="radio" id="yesCruise" name="cruise" required><label for="yesCruise">Yes</label>
                     <input type="radio" id="noCruise" name="cruise"><label for="noCruise">No</label>
                 </div>

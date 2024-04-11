@@ -160,6 +160,9 @@
         padding:5px;
         width: 100%;
     }
+    .contactForm form p{
+        font-size:1rem;
+    } 
     #submit {
         display: flex;
         justify-content: center;

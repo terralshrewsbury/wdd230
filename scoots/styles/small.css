@@ -9,7 +9,6 @@
 }
 #menu::before {
     content:"☰";
-    
 }
 #menu.open::before{
     content: "❌";
@@ -109,14 +108,17 @@ footer{
 }
 /* styles for pages 3,4, & 5*/
 header h1{
-    font-size: 1rem;
+    font-size: 1.25rem;
     top:3%;
 }
 .menu_other{
     position: absolute;
-    top: 15%;
+    top: 7%;
     left:50%;
     transform: translate(-50%, -50%);
+}
+#social_other img{
+    max-width: 15px;
 }
 /*style for page 2 */
 .rentalsPage{
