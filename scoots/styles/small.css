@@ -109,13 +109,12 @@ footer{
 /* styles for pages 3,4, & 5*/
 header h1{
     font-size: 1.25rem;
-    top:3%;
+    top:10%;
 }
 .menu_other{
-    position: absolute;
-    top: 7%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top:5%;
+    margin:3%
 }
 #social_other img{
     max-width: 15px;
@@ -127,7 +126,7 @@ header h1{
 }
 .rentalsPage h2{
     font-size: 1.75rem;
-    margin-top:10%;
+
 }
 .table{
     margin:20px;
@@ -155,8 +154,6 @@ header h1{
 }
 .reservationTitle{
     font-size: 1.5rem;
-    padding-top:10%;
-    margin-top:10%;
 }
 .calendar{
     font-size: .75rem;
@@ -165,7 +162,7 @@ header h1{
     font-size: 1.25rem;
 }
 #nextMonth, #prevMonth{
-    font-size: 1rem;
+    font-size: .75rem;
 }
 
 #calendar th{
@@ -237,7 +234,6 @@ textarea{
 /* Style for Contact Page */
 .contactPage h1{
     font-size: 1.5rem;
-    margin-top:10%;
 }
 .essentialContactinfo p{
     font-size: 1rem;
@@ -280,7 +276,7 @@ iframe{
 .contactForm input[type="password"]{
     font-size: 1rem;
     padding:5px;
-    width: 100%;
+    width: 90%;
 }
 #submit {
     display: flex;
