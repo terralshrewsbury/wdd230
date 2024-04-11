@@ -581,7 +581,7 @@ iframe{
     margin:0;
 }
 /* style page for attributions */
-main{
+#attributions{
     padding:5%;
     text-align: center;
 }
